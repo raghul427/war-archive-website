@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>War History Archive</title>
+
+  <!-- CSS Embedded -->
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f5f5f5;
+      color: #2b2b2b;
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #222;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      margin: 0 1.2em;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('images/hero-background.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #f5f5f5;
+      padding: 0 1em;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 0.5em;
+      font-style: italic;
+      text-shadow: 1px 1px 6px #000;
+    }
+
+    /* Content Sections */
+    section {
+      max-width: 900px;
+      margin: 2em auto;
+      background-color: white;
+      padding: 2em 2.5em;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      margin-bottom: 1em;
+      border-bottom: 3px solid #f39c12;
+      padding-bottom: 0.3em;
+      color: #d35400;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      margin-bottom: 1em;
+      text-align: justify;
+    }
+
+    /* Image Styles in Key Wars Section */
+    section img {
+      width: 100%;
+      height: auto;
+      margin-top: 1em;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    textarea {
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 0.8em;
+      margin-bottom: 1em;
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #d35400;
+      outline: none;
+    }
+
+    button {
+      background-color: #d35400;
+      color: white;
+      padding: 0.9em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e67e22;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1.5em 1em;
+      font-size: 0.9rem;
+      margin-top: 3em;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      section {
+        margin: 1em;
+        padding: 1.5em;
+      }
+
+      nav a {
+        margin: 0 0.8em;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About War History</a>
+    <a href="#key-wars">Key Wars</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section with background image -->
+  <header class="hero">
+    <div>
+      <h1>War History Archive</h1>
+      <p>Exploring Conflicts that Shaped the World</p>
+    </div>
+  </header>
+
+  <!-- About War History Section -->
+  <section id="about">
+    <h2>About War History</h2>
+    <p>
+      War has been a defining factor in shaping societies, borders, and politics throughout human history.
+      Understanding the causes, events, and consequences of war helps us learn from the past and strive
+      for a more peaceful future.
+    </p>
+    <p>
+      This archive is dedicated to chronicling the major conflicts across centuries, highlighting pivotal battles,
+      influential leaders, and the impact on civilizations.
+    </p>
+  </section>
+
+  <!-- Key Wars Section -->
+  <section id="key-wars">
+    <h2>Key Wars in History</h2>
+    <p>
+      From ancient battles to modern conflicts, here are some of the most significant wars that changed history:
+    </p>
+    <ul>
+      <li>
+        <strong>World War I (1914-1918):</strong> Known as "The Great War," it involved many world powers and resulted in massive geopolitical changes.
+        <img src="images/world war1.jpeg" alt="World War I" />
+      </li>
+      <li>
+        <strong>World War II (1939-1945):</strong> The deadliest conflict in history, featuring the Holocaust, atomic bombings, and the rise and fall of empires.
+        <img src="images/world war2.jpeg" alt="World War II" />
+      </li>
+      <li>
+        <strong>The Napoleonic Wars (1803-1815):</strong> A series of conflicts involving Napoleon Bonaparte's French Empire against various European coalitions.
+        <img src="images/nepolionicwar.jpeg" alt="Napoleonic Wars" />
+      </li>
+      <li>
+        <strong>The American Civil War (1861-1865):</strong> A pivotal war in U.S. history over slavery and states’ rights.
+        <img src="images/civilwar.jpeg" alt="American Civil War" />
+      </li>
+      <li>
+        <strong>The Cold War (1947-1991):</strong> A prolonged period of political tension and proxy wars between the USA and the USSR.
+        <img src="images/coldwar.jpeg" alt="Cold War" />
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact the Archivist</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 War History Archive. All rights reserved.
+  </footer>
+
+</body>
+</html>
